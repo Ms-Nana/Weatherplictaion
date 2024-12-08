@@ -3,40 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weatherplication</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Tuesday 14:49, scattered clouds
-          <br />
-          Humidity: 66%, Wind: 3.3km/h
-        </p>
-      </div>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.3km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">&deg;C</div>
+          </div>
+        </div>
+      </main>
 
-      <div>🌤️ 12 &deg;C</div>
-    </main>
-
-    <footer>
-      Coded by
-      <a href="https://github.com/" target="_blank"> Isenathi Nana</a> code
-      hosted is<a
-        href="https://github.com/Ms-Nana/Weatherplictaion"
-        target="_blank"
-        >, open-sourced on GitHub</a
-      >
-      and
-      <a href="https://weatherplication.netlify.app/" target="_blank">
-        hosted on Netlify</a
-      >
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/" target="_blank"> Isenathi Nana</a> code
+        hosted is<a
+          href="https://github.com/Ms-Nana/Weatherplictaion"
+          target="_blank"
+          >, open-sourced on GitHub</a
+        >
+        and
+        <a href="https://weatherplication.netlify.app/" target="_blank">
+          hosted on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
